@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid Layout</title>
+    <style>
+        *{
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 100px 200px 400px 300px 200px; */
+            /* grid-template-columns: 300px repeat(2, 100px) 200px; */
+            /* grid-template-columns: repeat(5, 100px); */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(6, 1fr) 2fr; */
+            /* grid-template-columns: auto 100px auto 300px auto; */
+            /* grid-template-columns: 100px 300px 200px; */
+            /* grid-template-columns: 1fr 4fr 2fr; */
+            grid-template-columns: 300px 2fr 3fr;
+            /* column-gap: 30px; justify-content: use korle colum gap কাজ করবে না মামা  */
+            /* grid-template-rows: 150px; */
+            /* justify-content: center; *
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            grid-gap: 20px;
+            /* justify-content: space-around; */
+            /* justify-content: space-between;
+            justify-content: space-evenly; */
+            /* grid-column-gap: 20px; */
+            /* row-gap: 0; */
+            /* grid-row: inherit; */
+            
+            /* width: 660px;
+            height: 700px; */
+            /* border: 2px solid peru; */
+        }
+        .item{
+            border: 1px solid blueviolet;
+            /* width: 200px;
+            height: 30px; */
+            row-gap: 2px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Grid Layout: 2D Layout</h2>
+    <div class="container"> 
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+        <div class="item">Item-17</div>
+        <div class="item">Item-18</div>
+        <div class="item">Item-19</div>
+        <div class="item">Item-20</div>
+    </div>
+</body>
+</html>
